@@ -8,7 +8,7 @@ See parent docs/dapier/REPRODUCE.md for installation, data, training and replay.
 The model and deploy.py behavior is preserved, including RGB input handling and
 oldest-heavy temporal ensemble. The original train.sh/process_data.sh are demo
 stubs, **not working training/conversion entry points**. Use the parent module
-`python -m dapier_act.train_multimodal --help` instead.
+`PYTHONPATH="$PWD:$PWD/dapier_act" python dapier_act/train_multimodal.py --help` instead.
 
 ```bash
 # from RoboTwin root after environment setup; use a trusted local checkpoint dir
